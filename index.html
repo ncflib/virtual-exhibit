@@ -79,7 +79,7 @@
 
 
         <button id="button" class="btn btn-primary">View Exhibition</button><br>
-        <svg class="bi bi-arrow-bar-down" width="10em" height="10em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <svg class="bi bi-arrow-bar-down" width="10em" height="10em" viewBox="0 0 16 16" fill="grey" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M11.354 10.146a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 01.708-.708L8 12.793l2.646-2.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
           <path fill-rule="evenodd" d="M8 6a.5.5 0 01.5.5V13a.5.5 0 01-1 0V6.5A.5.5 0 018 6zM2 3.5a.5.5 0 01.5-.5h11a.5.5 0 010 1h-11a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
         </svg>
@@ -110,8 +110,15 @@
     <div class="container">
 
       <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <div class="container d-flex h-100 align-items-center mx-auto text-center row align-items-center no-gutters mb-4 mb-lg-5">
         <iframe id="exhibit" width="1280" height="720" src="https://www.artsteps.com/embed/5e7e246eb733f3186e8f87ac/1280/720" frameborder="0" allowfullscreen></iframe>
+        <br><br><br><br>
+        <button id="button2" style="margin: auto;" class="btn btn-primary">Learn more</button><br>
+<script>  $("#button2").click(function () {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#info").offset().top
+  }, 1500);
+});</script>
       </div>
 
       <!-- Project One Row -->
@@ -126,7 +133,7 @@
   </section>
 
   <!-- Signup Section -->
-  <section id="signup" class="signup-section">
+  <section id="info" class="signup-section">
     <div class="container">
       <div class="row">
 
@@ -135,9 +142,10 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
-    <div class="container">
-
+  <section class="contact-section bg-black" style="height: 150px;">
+    <div class="container text-white-50">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque at sapien eget vulputate. Sed rutrum pulvinar fermentum. In id mattis tortor. Ut semper eros quis sem tempor consectetur ut eget ligula. Sed molestie neque at tincidunt cursus. Mauris a purus nec arcu vulputate vehicula. Sed non maximus augue, vitae auctor ipsum. In laoreet ipsum et dolor interdum interdum. Praesent feugiat mi aliquam lacus dignissim facilisis. Donec commodo nibh eu orci aliquet eleifend. Nam pharetra mattis mauris, et faucibus eros tincidunt a. Suspendisse vulputate sapien ut libero sagittis, tristique hendrerit est laoreet. Morbi vel finibus metus.
+      </p>
       <div class="row">
       </div>
 
@@ -152,7 +160,7 @@
       <br>
       Created with <a href="https://www.artsteps.com/">artsteps</a>.
       <br>
-      Created by <a href="https://calmurgu.com">Cal Murgu</a>, Digitial Humanities Librarian, in collaboration with <a href="#">Prof. Kim Anderson</a>, New College of Florida.
+      Created by <a href="https://calmurgu.com">Cal Murgu</a>, Digitial Humanities Librarian, New College of Florida.
     </div>
   </footer>
 
